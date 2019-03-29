@@ -6,8 +6,8 @@
 Github: https://github.com/JackWHLiu/jackknife
 
 ## 1.可以干什么？
-### 一份模板代码，多渠道打包
+### 一份模板代码，多渠道打包。
 ## 2.为什么要用它？
-### 代码稳定可靠，已在年收入千万以上项目上验证。使用简便，简单的注解配置就可以实现功能并灵活切换
+### 代码稳定可靠，已在年收入千万以上项目上验证。使用简便，简单的注解配置就可以实现功能并灵活切换。
 ## 3.怎么用起来？
-### api 'com.github.JackWHLiu.jackknife:jackknife-multiproxy:4.1.7'，如不能下载则需要添加maven仓库地址maven { url "https://jitpack.io" }
+### api 'com.github.JackWHLiu.jackknife:jackknife-multiproxy:4.1.7'，如不能下载则需要添加maven仓库地址maven { url "https://jitpack.io" }。
