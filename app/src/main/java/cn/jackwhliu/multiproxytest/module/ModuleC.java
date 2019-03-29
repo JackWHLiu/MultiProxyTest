@@ -18,9 +18,6 @@ import cn.jackwhliu.multiproxytest.compat.interfaces.IDifferenceC;
 @Difference(proxyName = BuildConfig.PROXY_CODE)
 public class ModuleC implements IDifferenceC {
 
-    @Autowired
-    private IDifferenceC mModule;
-
     @Override
     public IDifferenceC getDecorator() {
         return MultiProxy.getDecorator(this, IDifferenceC.class);

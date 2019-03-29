@@ -9,12 +9,14 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // ----------------- 必须 ---------------------
         flavorDimensions "app"
         javaCompileOptions {
             annotationProcessorOptions {
                 includeCompileClasspath = true
             }
         }
+        // ----------------- 必须 ---------------------
     }
     buildTypes {
         release {
@@ -22,6 +24,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    // ----------------- 必须 ---------------------
     productFlavors {
         grape {
             dimension "app"
@@ -54,6 +57,7 @@ android {
             ]
         }
     }
+    // ----------------- 必须 ---------------------
 }
 
 dependencies {
@@ -63,5 +67,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    api 'com.github.JackWHLiu.jackknife:jackknife-multiproxy:4.1.3'
+    api 'com.github.JackWHLiu.jackknife:jackknife-multiproxy:4.1.7'
 }

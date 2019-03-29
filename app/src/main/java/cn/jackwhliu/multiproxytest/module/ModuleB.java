@@ -16,9 +16,6 @@ import cn.jackwhliu.multiproxytest.compat.interfaces.IDifferenceB;
 @Difference(proxyName = BuildConfig.PROXY_CODE)
 public class ModuleB implements IDifferenceB {
 
-    @Autowired
-    private IDifferenceB mModule;
-
     @Override
     public String getFruitColor() {
         return "";

@@ -19,12 +19,6 @@ import cn.jackwhliu.multiproxytest.compat.interfaces.IDifferenceA;
 @Difference(proxyName = BuildConfig.PROXY_CODE)
 public class ModuleA implements IDifferenceA {
 
-    /**
-     * 使用Autowired注解依赖注入IDifferenceA，此属性是必须的。
-     */
-    @Autowired
-    private IDifferenceA mModule;
-
     @Override
     public void a1() {
         Log.e("ModuleA", "a1");
@@ -43,6 +37,7 @@ public class ModuleA implements IDifferenceA {
 
     @Override
     public IDifferenceA getDecorator() {
+        //在module层这样获取装饰器
         return MultiProxy.getDecorator(this, IDifferenceA.class);
     }
 }
